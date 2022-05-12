@@ -1,0 +1,119 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$bg-color: #e0ddb2;
+$aside-border-color: #dad6ab;
+$font-color-nav-AND-footer: #016690;
+$bg-footer: #275A91;
+
+/*Responsive variables*/
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-desktop: 1024px;
+
+/*End of responsive*/
+
+header {
+    img {
+        width: 100%;
+    }
+    h1 {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-weight: bolder;
+        width: 80%;
+        text-align: center;
+    }
+    .nav {
+        justify-content: flex-end;
+        a {
+            color: $font-color-nav-AND-footer;
+            padding: 15px;
+            // font-weight: bolder;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.cards {
+    justify-content: center;
+    margin: 40px 0 0;
+    .card {
+        border-radius: 8px;
+        background-color: $bg-color;
+        color: #000;
+        flex-direction: row;
+        // align-items: center;
+        padding: 15px;
+        margin: 10px;
+        div {
+            // align-items: ;
+            padding: 0 15px;
+        }
+        img {
+            width: 40%;
+        }
+        h4 {
+            font-weight: bolder;
+        }
+    }
+}
+
+.bottom {
+    margin: 0;
+    padding: 25px;
+    h4 {
+        font-weight: bolder;
+    }
+    p {
+        font-weight: 600;
+    }
+    .aside {
+        padding: 15px;
+        border: 2px solid $aside-border-color;
+    }
+}
+
+.footer {
+    background-color: $bg-footer;
+    justify-content: center;
+    a {
+        color: #fff;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width:$breakpoint-xs) and (max-width: $breakpoint-tablet) {
+    header {
+        .nav {
+            justify-content: center;
+        }
+        img {
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+    .cards {
+        .card {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+            div {
+                margin: 10px 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    .nav {
+        justify-content: center;
+    }
+}

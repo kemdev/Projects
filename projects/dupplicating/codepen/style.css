@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    /* font-size: 62.5%; */
+    /* font-size: 2em; */
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: unset;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    height: 115px;
+    width: 100%;
+    padding: 10px;
+}
+
+header a,
+header p {
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+header div {
+    width: 40%;
+    font-size: 1.5em;
+}
+
+nav {
+    width: fit-content;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    /* height: 30px; */
+}
+
+nav li:not(:last-child) {
+    /* width: 10%; */
+    /* font-size: 0.5em; */
+    height: 100%;
+    background-color: #343436;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav li {
+    /* background-color: #343436; */
+    margin: 5px;
+}
+
+nav li:first-child {
+    position: relative;
+}
+
+nav li:first-child::before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid orange;
+    width: 90%;
+    inset: 0;
+    margin: 4px auto;
+}
+
+.profileImageParent {
+    height: 45px;
+    width: 45px;
+}
+
+.profileImage {
+    background-image: url("https://www.oberlo.com/media/1603970279-pexels-photo-3.jpg?fit=max&fm=jpg&w=1824");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+}
+
+.main section:not(.resultSection) {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    width: 33.333%;
+    height: 500px;
+    background-color: #1B2B34;
+}
+
+label {
+    width: 100%;
+    background-color: #18272F;
+    color: #fff;
+    padding: 10px;
+}
+
+span {
+    /* content: '⚙'; */
+    background-color: #343436;
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+textarea {
+    color: grey;
+    background-color: #1B2B34;
+    resize: none;
+    outline: none;
+    border: none;
+    /* test */
+    background: url(http://i.imgur.com/2cOaJ.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    padding-top: 10px;
+    border-color: #ccc;
+    font-size: 13px;
+    line-height: 16px;
+    /* end of test */
+}
+
+textarea:focus {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    content: "<p>Oh Hey There!</p>";
+}
+
+.resultSection iframe {
+    height: calc(100vh - 630px);
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.8em;
+    border-top: 1px solid grey;
+}

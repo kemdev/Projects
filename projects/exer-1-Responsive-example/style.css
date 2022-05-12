@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1.5em;
+}
+
+.div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.div li {
+    padding: 10px;
+}
+
+.bgImage {
+    background-image: url("./img/searchpng.com-male-profile-png-image-free-download.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    transition: all 1s ease-in-out;
+    background-color: chocolate;
+}
+
+@media screen and (max-width: 668px) {
+    .bgImage {
+        width: 150px;
+        height: 150px;
+        border: none;
+        border-radius: initial;
+    }
+    strong {
+        color: orangered;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bgImage {
+        width: 550px;
+        height: 550px;
+    }
+}

@@ -1,0 +1,26 @@
+@mixin bgcolor($color) {
+    background-color: $color;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin groupStyle($color-1, $color-2, $color-3) {
+    padding: 0;
+    .row-1 {
+        margin: 0;
+        height: 100%;
+        .colorPallete-1 {
+            @include bgcolor($color-1);
+        }
+        .colorPallete-2 {
+            @include bgcolor($color-2);
+        }
+        .colorPallete-3 {
+            @include bgcolor($color-3);
+        }
+    }
+    .colorName {
+        display: flex;
+        justify-content: space-around
+    }
+}

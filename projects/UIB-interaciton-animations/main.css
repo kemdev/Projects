@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid hotpink;
+    height: 100vh;
+}
+
+div {
+    border: 2px dotted chartreuse;
+    width: 20%;
+}
+
+.strobe_1 {
+    background-color: yellow;
+    animation: first 2s infinite alternate-reverse;
+}
+
+.strobe_2 {
+    background-color: crimson;
+    animation: second 2s infinite ease-in-out;
+}
+
+.strobe_3 {
+    background-color: olive;
+    animation: third 2s infinite ease-in-out;
+}
+
+.strobe_4 {
+    background-color: gray;
+    animation: third 2s infinite ease-in-out;
+}
+
+.strobe_5 {
+    background-color: indigo;
+    animation: third 2s infinite ease-in-out;
+}
+
+.strobe_1:hover {
+    animation-name: strobe_1;
+}
+
+.strobe_2:hover {
+    animation-name: strobe_2;
+}
+
+.strobe_3:hover {
+    animation-name: strobe_3;
+}
+
+.strobe_4:hover {
+    animation-name: strobe_4;
+}
+
+.strobe_5:hover {
+    animation-name: strobe_5;
+}
+
+@keyframes strobe_1 {
+    from,
+    to {
+        background-color: yellow;
+    }
+    50% {
+        background-color: transparent;
+    }
+}
+
+@keyframes strobe_2 {
+    from,
+    to {
+        background-color: crimson;
+    }
+    50% {
+        background-color: goldenrod;
+    }
+}
+
+@keyframes strobe_3 {
+    from,
+    to {
+        background-color: olive;
+    }
+    50% {
+        background-color: deepskyblue;
+    }
+}
+
+@keyframes strobe_4 {
+    from,
+    to {
+        background-color: gray;
+    }
+    50% {
+        background-color: oldlace;
+    }
+}
+
+@keyframes strobe_5 {
+    from,
+    to {
+        background-color: indigo;
+    }
+    50% {
+        background-color: honeydew;
+    }
+}

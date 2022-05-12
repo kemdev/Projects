@@ -1,0 +1,59 @@
+@mixin randomHights {
+    @for $var from 1 to 16 {
+         :nth-child(#{$var}) {
+            height: random(450) + 250 + px;
+        }
+    }
+}
+
+@mixin randomBorderRadius($para) {
+    @for $var from 1 to 16 {
+        $bottom-right-border: random(40) + 25 + px;
+        $top-right-border: random(40) + 25 + px;
+        @if $para=="top" or $para==top {
+             :nth-child(#{$var}) {
+                border-radius: 0 0 $bottom-right-border 10px;
+            }
+        }
+        @else if $para=="bottom" or $para==bottom {
+             :nth-child(#{$var}) {
+                border-radius: $top-right-border 10px 0 0;
+            }
+        }
+    }
+}
+
+@mixin divsBgColor($para) {
+    @for $var from 1 to 16 {
+        $random-end-value: random(100) + '%';
+        @if $para==top {
+             :nth-child(#{$var}) {
+                background: linear-gradient(90deg, #af87d5 0%, #633593 #{$random-end-value});
+            }
+        }
+        @else if $para==bottom {
+             :nth-child(#{$var}) {
+                background: linear-gradient(90deg, rgba(255, 206, 230, 1) 0%, rgba(255, 72, 164, 1) calc(#{$random-end-value}));
+            }
+        }
+    }
+}
+
+@mixin animation-stuff() {
+    @for $var from 1 to 16 {
+        $randomeHeit-start: random(250) + px;
+        $randomeHeit-end: random(350) + px;
+        $random-duration: random(3) + 1* 0.1;
+         :nth-child(#{$var}) {
+            animation: animating-height $random-duration +s infinite alternate;
+        }
+        @keyframes animating-height {
+            0% {
+                height: $randomeHeit-start;
+            }
+            100% {
+                height: $randomeHeit-end + $var;
+            }
+        }
+    }
+}

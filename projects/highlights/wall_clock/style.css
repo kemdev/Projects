@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+main {
+    background-image: url('image.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 0;
+    /* background-color: coral; */
+}
+
+.bigScorpion,
+.smallScorpion,
+.tiktok,
+.nail1 {
+    position: absolute;
+    /* top: -10%; */
+    left: 50%;
+    transform: translate(-50%, -105%);
+    transform-origin: 50% 100%;
+}
+
+.bigScorpion {
+    height: 350px;
+    width: 35px;
+    background-color: black;
+    animation: rotation 260s infinite linear;
+}
+
+.smallScorpion {
+    height: 450px;
+    width: 25px;
+    background-color: black;
+    animation: rotation 50s infinite linear;
+}
+
+.tiktok {
+    height: 450px;
+    width: 10px;
+    background-color: #1f1f1f;
+    animation: rotation 15s infinite linear;
+}
+
+.nail1 {
+    background-color: rgb(0, 0, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -105%) rotate(-360deg);
+    }
+    100% {
+        /* transform: rotate(360); */
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .bigScorpion {
+        height: 150px;
+        width: 12px;
+    }
+    .smallScorpion,
+    .tiktok {
+        height: 200px;
+        width: 10px;
+    }
+    .tiktok {
+        width: 5px;
+    }
+    .nail1 {
+        width: 20px;
+        height: 20px;
+    }
+}

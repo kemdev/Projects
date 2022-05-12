@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+
+}
+
+
+main{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: url(clip-img-large-preview-opt.jpg);
+    height: 1000px;
+    width: 1000px;
+    background-size: contain;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    position: relative;
+    
+}
+
+.container::after,
+.container::before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    top: 0%;
+    left: 49.8%;
+}
+
+.container::after {
+    transform: rotate( 45deg)
+}
+
+.container::before {
+    transform: rotate( -45deg)
+}
+
+.div-1 p,
+.div-2 p,
+.div-3 p,
+.div-4 p {
+    transform: rotate(-45deg);
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    opacity: 0.5;
+    background-color: #97856a;
+}
+
+.div-2,
+.div-4 {
+    border: 4px solid #fff;
+}
+
+.div-1 {
+    transform: translate(320px, 0) rotate(45deg);
+    background-color: transparent;
+}
+
+.div-2 {
+    transform: translate(19.4%, -8.2%) rotate(45deg);
+}
+
+.div-3 {
+    transform: translate(93%, -38%) rotate(45deg);
+}
+
+.div-4 {
+    transform: translate(160%, -206%) rotate(45deg);
+}
+
+.div-1:hover,
+.div-2:hover,
+.div-3:hover,
+.div-4:hover {
+    opacity: 1;
+}

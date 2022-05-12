@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-image: url("./img/homepage_cleaned3.jpg");
+    background-size: cover;
+    background-position: center -338px;
+    background-repeat: no-repeat;
+}
+
+.centralImage {
+    /* margin: auto; */
+    position: fixed;
+    top: 473px;
+    left: 46%;
+}
+
+.vector {
+    position: relative;
+    margin-left: -234px;
+    top: -37px;
+}
+
+.red {
+    position: relative;
+    top: -245px;
+    left: -50px;
+}
+
+.brown {
+    position: relative;
+    top: -296px;
+    left: 118px;
+}
+
+.green {
+    position: relative;
+    top: -367px;
+    right: -264px;
+}
+
+.grey {
+    position: relative;
+    top: -308px;
+    right: -284px;
+}
+
+.orange {
+    position: relative;
+    top: -474px;
+    left: -133px;
+}

@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+body {
+    /* background-image: url("img/topography.svg"); */
+    background-image: url("img/topography.svg"), linear-gradient(110deg, #ed5d7c, #6d47d9);
+    height: 100vh;
+    background-size: 340px, auto;
+    color: #272727;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 2fr);
+    grid-template-rows: repeat(8, 50px);
+    gap: 1em;
+    padding: 40px;
+}
+
+main * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc600;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
+.div-1 {
+    grid-column: 3/5;
+}
+
+.div-2 {
+    grid-column: 5/11;
+}
+
+.div-3 {
+    /*default*/
+}
+
+.div-4 {
+    /* grid-column: 2/3; */
+}
+
+.div-5 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+.div-8 {
+    grid-column: 7;
+    grid-row: 2 / 4;
+}
+
+.poop {
+    grid-column: 8;
+    grid-row: 2;
+}
+
+.div-15 {
+    grid-row: 6;
+    grid-column: 1/11;
+}
+
+.div-20 {
+    grid-row: 4 / 6;
+    grid-column: 1;
+}
+
+.div-16,
+.div-17,
+.div-18,
+.div-19,
+.div-21 {
+    grid-row: 7;
+}
+
+.div-18 {
+    grid-column: 5/9;
+}
+
+.div-19 {
+    grid-column: 9;
+}
+
+.div-21 {
+    grid-column: 10;
+}
+
+.div-22,
+.div-23,
+.div-24,
+.div-25,
+.div-26,
+.div-27,
+.div-28,
+.div-29,
+.div-30 {
+    grid-row: 8;
+}

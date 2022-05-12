@@ -1,0 +1,55 @@
+// This is where you can import other stylesheets or write your scss code
+@import './someLoops/loops';
+$divs_hight: random(450)+px;
+$divs_width: 50px;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.top div,
+.bottom div {
+    width: $divs_width;
+    background-color: black;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-left: $divs_width;
+    @include randomHights;
+    @include randomBorderRadius(top);
+    @include divsBgColor(top);
+    @include animation-stuff;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: $divs_width;
+    @include randomHights;
+    @include randomBorderRadius(bottom);
+    @include divsBgColor(bottom);
+    @include animation-stuff;
+}

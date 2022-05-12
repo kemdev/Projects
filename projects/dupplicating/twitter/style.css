@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+:root {
+    --icon-font-size: 24px;
+    --font-awesome-free: "Font Awesome 5 Free";
+    --border-color-center: 1px solid #2f3336;
+}
+
+main {
+    margin: auto;
+    width: 85%;
+}
+
+.leftSection,
+.centerSection,
+.rightSection {
+    display: inline-block;
+}
+
+
+/*End of standard Design*/
+
+.leftSection {
+    position: sticky;
+    top: 0;
+    margin-top: 5px;
+}
+
+.leftSection .fa-themeisle {
+    margin-left: 40px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--icon-font-size);
+}
+
+.leftNavbar {
+    font-weight: bolder;
+    list-style: none;
+}
+
+.leftNavbar li {
+    color: #fff;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+.leftNavbar li::before {
+    font-family: "Font Awesome 5 Free";
+    padding: 20px;
+    font-size: var(--icon-font-size);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.leftNavbar li:first-child::before {
+    content: "\f015";
+}
+
+.leftNavbar li:nth-child(2)::before {
+    content: "\f292";
+}
+
+.leftNavbar li:nth-child(3)::before {
+    content: "\f0f3";
+    font-weight: normal;
+}
+
+.leftNavbar li:nth-child(4)::before {
+    content: "\f0e0";
+    font-weight: normal;
+}
+
+.leftNavbar li:nth-child(5)::before {
+    content: "\f02e";
+    font-weight: normal;
+}
+
+.leftNavbar li:nth-child(6)::before {
+    content: "\f022";
+    font-weight: lighter;
+}
+
+.leftNavbar li:nth-child(7)::before {
+    content: "\f007";
+    font-weight: lighter;
+}
+
+.leftNavbar li:last-child::before {
+    content: "\f13a";
+}
+
+
+/* Start Designing Tweet Button*/
+
+.tweetButtonDiv {
+    margin: 40px;
+}
+
+.tweetButton {
+    background-color: #1da1f3;
+    padding: 15px 100px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+
+/*---------------*/
+
+
+/*Start designing Center Section*/
+
+.centerSection {
+    width: 800px;
+    vertical-align: top;
+    border-left: var(--border-color-center);
+    border-right: var(--border-color-center);
+}
+
+.topic {
+    /* height: 40px; */
+    font-size: 24px;
+    /* line-height: 55px; */
+    padding: 20px;
+    border-bottom: var(--border-color-center);
+}
+
+.topic::after,
+.topic::before {
+    font-family: var(--font-awesome-free);
+    color: #2d4462;
+    font-weight: 900;
+}
+
+.topic::before {
+    content: "\f060";
+}
+
+.topic::after {
+    content: "\f093";
+    float: right;
+}
+
+.topic span {
+    font-weight: bolder;
+    padding: 40px;
+}
+
+.posts {
+    height: fit-content;
+    padding: 20px;
+    border-bottom: var(--border-color-center);
+}
+
+.posts h1 {
+    font-size: 2.5em;
+}
+
+.subHeading {
+    font-weight: bolder;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.suggestImages,
+[class*="profImg"] {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.suggestImages:not(.bg1) {
+    margin-left: -15px;
+}
+
+.bg1 {
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_3.0/h_500,c_limit/37cf1b78-4ca4-4135-974c-4a015aa787b9/nike-nba-shop-teamtrikots-bekleidung-und-ausrstung.png");
+    z-index: 4;
+}
+
+.bg2 {
+    background-image: url("https://cdn.nba.com/manage/2020/11/nba-basketball-iso.jpg");
+    z-index: 3;
+}
+
+.bg3 {
+    background-image: url("https://media.designrush.com/inspiration_images/137735/conversions/_1615382342_360_NBA_logo_1a5cfe61c1d3-mobile.jpg");
+    z-index: 2;
+}
+
+.bg4 {
+    background-image: url("https://a.espncdn.com/photo/2020/1209/nba_rank_top10_cr_16x9.jpg");
+}
+
+.darkGrey {
+    color: #717577;
+    margin-top: 20px;
+}
+
+.followTopicButton {
+    color: #3892c4;
+    border: 2px solid #3892c4;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 12px 15px;
+    float: right;
+    margin-top: -100px;
+}
+
+
+/*Profile name and Image design*/
+
+.profileName {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profileName p {
+    padding-left: 15px;
+}
+
+.userName {
+    font-family: "Marck Script", cursive;
+    font-size: 2em;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.userName2 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.userName3 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.userName4 {
+    font-family: "Palette Mosaic", cursive;
+}
+
+.profImg {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c7981764819383.5adf1bbdd0a1b.jpg");
+}
+
+.profileName span {
+    color: #717577;
+}
+
+.insidePost {
+    padding-left: 60px;
+    /* margin-top: -35px; */
+}
+
+.insidePost ol {
+    margin-left: 34px;
+    line-height: 24px;
+}
+
+.insidePost p:last-child {
+    margin-left: -10px;
+    margin-top: 25px;
+}
+
+.tweetBottomIcons {
+    color: grey;
+    margin-top: 15px;
+}
+
+.tweetBottomIcons i {
+    padding-left: 62px;
+}
+
+.tweetBottomIcons span {
+    padding-left: 10px;
+}
+
+.showThread {
+    display: block;
+    color: #206996;
+    font-size: initial;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+
+/*Second Post*/
+
+.profImg2 {
+    background-image: url("https://johngress.com/wp-content/uploads//2013/07/1200_17C0900-720x720.jpg");
+}
+
+
+/*Inside post Images*/
+
+.insidePost img {
+    width: 49%;
+    height: 250px;
+}
+
+.leftCornered {
+    border-radius: 0px 25px 25px 0;
+}
+
+.rightCornered {
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+/*-----------*/
+
+.profImg3 {
+    background-image: url("https://freight.cargo.site/t/original/i/28ed0d82c5755565e6b158de4d406e6a56a9a45116732cecde8f066d69ac7688/AJS_2225.jpg");
+}
+
+.profImg4 {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/c4ced388054215.5dcad3e74dace.jpg");
+}
+
+.profImg5 {
+    background-image: url("https://i.pinimg.com/originals/e1/8e/69/e18e696270dd471dccc32d45c5ef641f.jpg");
+}
+
+
+/*-------------Right section--------------*/
+
+.rightSection {
+    margin-top: 5px;
+    position: fixed;
+    vertical-align: top;
+    margin-left: 40px;
+}
+
+
+/* Search part */
+
+input {
+    background-color: #15181d;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px 15px 80px;
+    font-size: 1.5em;
+}
+
+.searchPart>span {
+    position: absolute;
+    /* margin-left: 45px; */
+    /* top: 14px; */
+    left: 15px;
+    color: grey;
+    font-size: 1.8em;
+    padding: 14px;
+}
+
+
+/*TREND FOR YOU PART*/
+
+.trendForYou,
+.topicToFollow {
+    border-radius: 25px;
+    background-color: #15181D;
+    margin-top: 25px;
+}
+
+.trendForYou h1,
+.topicToFollow h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    border-bottom: var(--border-color-center);
+    padding: 20px;
+}
+
+.trendForYou h1::after {
+    font-family: var(--font-awesome-free);
+    content: '\f013';
+    float: right;
+    color: #1da1f3;
+}
+
+.trendForYou span,
+.tofollowDiv span {
+    color: grey;
+    /* padding: 20px; */
+    line-height: 32px;
+}
+
+.foryouDiv,
+.tofollowDiv {
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.foryouDiv:not(:last-child)::after {
+    font-family: var(--font-awesome-free);
+    content: "\f141";
+    float: right;
+    margin-top: -5%;
+    font-size: var(--icon-font-size);
+    color: gray;
+}
+
+.foryouDiv:not(:last-child) {
+    border-bottom: var(--border-color-center);
+}
+
+.showmore {
+    color: #206996;
+    font-size: initial;
+}
+
+.showmore:hover {
+    color: #717577;
+}
+
+
+/*---------*/
+
+
+/* TOPIC TO FOLLOW */
+
+.tofollowDiv:not(:last-child) {
+    border-bottom: var(--border-color-center);
+}
+
+.tofollowDiv h3::after {
+    content: "Follow";
+    float: right;
+    color: #1da1f3;
+    border: 2px solid #1da1f3;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bolder;
+    margin-right: 40px;
+}
+
+.tofollowDiv span::after {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    content: "x";
+    float: right;
+    margin-right: -146px;
+    margin-top: -19px;
+    font-size: 2em;
+}

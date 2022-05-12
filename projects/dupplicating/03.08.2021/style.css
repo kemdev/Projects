@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+h3,
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+span {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* aside {
+    float: right;
+    margin-top: 100px;
+    margin-right: 400px;
+    margin-left: -141px;
+}
+
+aside h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #828282;
+    font-weight: 900;
+}
+
+ul {
+    color: #828282;
+}
+
+li a {
+    color: #E22658;
+} */
+
+section {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cards {
+    position: relative;
+    margin: 100px 0;
+    width: 31%;
+    /* height: 750px; */
+    border-radius: 25px;
+    background-color: #fff;
+    margin-right: 40px;
+}
+
+.tag {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background-color: #98BF0E;
+    color: #fff;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.information {
+    padding: 45px 20px;
+}
+
+.information h3 {
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.information p {
+    padding-bottom: 40px;
+}
+
+.information a {
+    color: #98BF0E;
+    font-weight: 700;
+}
+
+span {
+    display: block;
+    padding: 15px 20px;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+.imageCoverStandard {
+    /*To fix the border radius top*/
+    border-radius: 25px 25px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+    cursor: pointer;
+}
+
+.imageCover1 {
+    background-image: url("./img/IMG_0395-1-scaled.jpg");
+}
+
+.imageCover2 {
+    background-image: url("./img/CG4017-EPIC-FITTING-DAY-BANNERS-1200x580-LANDING-PAGE-UK.jpg");
+}
+
+.imageCover3 {
+    background-image: url("./img/Kjokken-5.jpg");
+}
+
+.imageCover4 {
+    background-image: url("./img/IMG_6354-scaled.jpg");
+}

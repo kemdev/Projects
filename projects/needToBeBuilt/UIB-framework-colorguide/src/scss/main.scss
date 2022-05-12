@@ -1,0 +1,66 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./variables/vars";
+.row {
+    margin: 10px;
+    .card {
+        // width: calc(25% - 50px);
+        flex: 0 0 22%;
+        height: 350px;
+        padding: 0%;
+        margin: 25px;
+        border-radius: 0 0 10px 10px;
+        h4 {
+            padding: 15px;
+        }
+    }
+}
+
+.card-1 {
+    .card-img-top {
+        @include bgcolor(#ff9ff3);
+    }
+}
+
+.card-2 {
+    .card-img-top {
+        @include bgcolor(#5f27cd);
+    }
+}
+
+.card-3 {
+    .card-img-top {
+        @include bgcolor(#ee5253);
+    }
+}
+
+.card-4 {
+    .card-img-top {
+        @include bgcolor(#4b4b4b);
+    }
+}
+
+.card-group-5 {
+    @include groupStyle(#ff9ff3, #a7479a, #ca65bd)
+}
+
+.card-group-6 {
+    @include groupStyle(#7f4de4, #5f27cd, #6933d6)
+}
+
+.card-group-7 {
+    @include groupStyle(#f07272, #ee5253, #e24545)
+}
+
+.card-group-8 {
+    @include groupStyle(#696969, #4b4b4b, #2e2e2e)
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
+    .row {
+        .col-md-3 {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    }
+}

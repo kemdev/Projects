@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+main {
+    display: grid;
+    width: 50%;
+    height: 900px;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+main>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(177, 175, 175, 0.733);
+}
+
+
+/*Parents divs*/
+
+.sqeeze {
+    background-color: #EAF7EB;
+}
+
+.ballBouncingDown {
+    background-color: #F9EEAB;
+}
+
+.ballBouncingLeft {
+    background-color: #FFDCB5;
+}
+
+.counting {
+    background-color: #FFB7BC;
+}
+
+
+/* Children divs */
+
+.squareBox {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    animation: squeezing 1.5s infinite both;
+}
+
+
+/*
+Animation
+*/
+
+
+/* Start animate the stuff */
+
+@keyframes squeezing {
+    0% {
+        transform: translate(0, -50%) rotate(360deg);
+    }
+    40% {
+        transform: translate(0, 40%);
+    }
+    60% {
+        /* transform: translate(0, 80%) rotate(0); */
+    }
+    80% {
+        transform: translate(0, 120%) rotate(0);
+    }
+    85% {
+        /* transform: translate(0, 120%) (2, 0); */
+    }
+    100% {
+        transform: translate(0, 120%) rotate(0) scale(1.5, 0.5);
+    }
+}

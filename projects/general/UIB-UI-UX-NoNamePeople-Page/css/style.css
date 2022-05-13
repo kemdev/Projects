@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    --h1Color: #000F37;
+    --h2Color: #000F37;
+    --pColor: #4F4F4F;
+    --mainColor: #68e1fd;
+}
+
+
+/* 
+================
+ STANDARD DESIGN
+================ 
+*/
+
+p {
+    color: var(--pColor);
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 5rem;
+    color: var(--h2Color);
+    font-weight: 600;
+}
+
+h3,
+h4 {
+    color: var(--h2Color);
+}
+
+
+/* 
+======================
+END OF STANDARD DESIGN
+====================== 
+*/
+
+nav .menuImage {
+    float: right;
+    width: 64px;
+    cursor: pointer;
+}
+
+header {
+    margin: 100px;
+}
+
+.logo {
+    filter: invert(87%) sepia(16%) saturate(4056%) hue-rotate(163deg) brightness(103%) contrast(98%);
+    width: 42px;
+    cursor: pointer;
+}
+
+.logoText {
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.hero {
+    margin-top: 10%;
+    height: 800px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 6rem;
+    color: var(--h1Color);
+    text-transform: capitalize;
+}
+
+.hero p {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.hero h2 {
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    padding: 20px 60px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.heroImage {
+    background-image: url("../assets/svg/hero.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size: 800px; */
+    height: 800px;
+    width: 50%;
+}
+
+main {
+    background-color: var(--mainColor);
+    /* height: 100vh; */
+    text-align: center;
+    padding-top: 6%;
+    /* margin-bottom: 80px; */
+    padding-bottom: 80px;
+}
+
+.headerAndSomeText h2 {
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.headerAndSomeText p {
+    margin-top: 40px;
+}
+
+.centeredWhiteBackGround {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: fit-content;
+    width: 90%;
+    margin: 100px auto;
+    padding: 100px;
+}
+
+.leftSection {
+    width: 100%;
+    padding: 15%;
+    margin-left: -220px;
+}
+
+h3 {
+    font-size: 4em;
+    line-height: 64px;
+    text-align: left;
+    padding: 10px;
+}
+
+h3::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/svg/check-mark.svg");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 40px;
+    vertical-align: middle;
+}
+
+.rightSection {
+    background-image: url("../assets/svg/services.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90%;
+}
+
+footer {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy h4 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.copy {
+    float: left;
+    /* padding: 40px; */
+}
+
+.socialIcon {
+    float: right;
+}
+
+.socialIcon i {
+    cursor: pointer;
+    padding: 10px 40px;
+}

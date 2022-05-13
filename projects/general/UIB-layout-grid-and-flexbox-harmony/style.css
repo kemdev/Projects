@@ -1,0 +1,57 @@
+/* Original styles - don't edit these! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg1 {
+    background: url(bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg2 {
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Add your styles below here*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 450px);
+    gap: 0.5em;
+    background-color: rgb(63, 63, 63);
+}
+
+.bg1,
+.bg2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+.bg1 *,
+.bg2 * {
+    /* margin: auto; */
+    background-color: #000;
+    color: #eee;
+    opacity: 0.8;
+    padding: 14px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.bg1:hover,
+.bg2:hover {
+    transform: scale(0.9);
+}

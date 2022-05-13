@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hi{
+    display: grid;
+    place-content: center;
+    height: 500px;
+    width: 500px;
+}
+
+.boxContainer {
+    /* position: relative; */
+    position: relative;
+    width: 500px;
+    height: 500px;
+    /* display: flex; */
+}
+
+.boxContainer> div:not(.hi) {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    /* transition: 0.8s ease-in-out; */
+    transition: 0.8s cubic-bezier(0.22, 0.76, 1, 1.03);
+}
+
+.boxContainer:hover .box-1 {
+    transform: translate(-250px) rotate(90deg);
+}
+
+.boxContainer:hover .box-2 {
+    transform: translate(-250px, 0) rotate(-90deg);
+}
+
+.boxContainer:hover .box-3 {
+    transform: translate(250px, 0) rotate(-90deg);
+}
+
+.boxContainer:hover .box-4 {
+    transform: translate(250px, 0) rotate(90deg);
+}
+
+/* .boxContainer:hover .box-5 {
+    transform: translate(250px, 200px) rotate(-90deg);
+}
+
+.boxContainer:hover .box-6 {
+    transform: translate(250px, -200px) rotate(-90deg);
+}
+
+.boxContainer:hover .box-7 {
+    transform: translate(-250px, -200px) rotate(-90deg);
+}
+
+.boxContainer:hover .box-8 {
+    transform: translate(-250px, 200px) rotate(-90deg);
+} */
+
+.box-1 {
+    background-color: steelblue;
+    transform: rotate(0deg);
+    top: 0;
+    /* left: 40%; */
+}
+
+.box-2 {
+    background-color: yellow;
+    bottom: 0;
+    /* left: 40%; */
+}
+
+.box-3 {
+    background-color: rosybrown;
+    right: 0;
+    top: 0px;
+}
+
+.box-4 {
+    background-color: dimgray;
+    right: 0;
+    bottom: 0;
+
+}
+
+/* .box-5 {
+    background-color: blueviolet;
+    top: 100%;
+    bottom: 0;
+    left: 20.9%;
+}
+
+.box-6 {
+    background-color: tomato;
+    top: -50%;
+    left: 20.9%;
+}
+
+.box-7 {
+    background-color: teal;
+    right: 20.9%;
+}
+
+.box-8 {
+    background-color: cyan;
+    right: 0;
+    right: 20.9%;
+    bottom: 0;
+} */

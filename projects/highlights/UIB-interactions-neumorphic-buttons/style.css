@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+    color: #4d3252;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+main div {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    text-transform: uppercase;
+    /* box-shadow: 8.71px 8.71px 28px #adaeb1, -3.71px -9.71px 25px #ffffff; */
+    box-shadow: 26.71px 29.71px 46px #c4ccf0, -11.71px -15.71px 61px #ffffff, inset 0px 0px 0px white;
+    border-radius: 15px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+img {
+    width: 30%;
+    padding-right: 10px;
+}
+
+main div:hover {
+    /* box-shadow: inset 9.91px 9.91px 15px #cad2de, inset -9.91px -9.91px 15px #e7ebf0; */
+    box-shadow: 0px 0px 0px #c4ccf0, 0px 0px 0px #ffffff, inset 9.91px 9.91px 15px #cad2de, inset -9.91px -9.91px 15px #e7ebf0;
+    color: #ff74c2;
+    cursor: pointer;
+}

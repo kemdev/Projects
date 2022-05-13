@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Swagger</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1>Tell us more</h1>
+            <form action="https://formspree.io/f/mknkpwgl" method="post">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="First Name" id="firstname" minlength="5" maxlength="13" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Last Name" id="lastname" minlength="5" maxlength="13" required>
+                <label for="email">Your Email</label>
+                <input type="email" name="_replyto" placeholder="Tell us how to contact you" id="email" minlength="10" maxlength="25" required>
+                <label for="comment">Tell us about yourself</label>
+                <textarea name="message" id="comment" rows="10" maxlength="120" required></textarea>
+                <div class="wantToKnowMoreSection">
+                    <label for="button">Want to know more?</label>
+                    <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <input type="submit" value="Submit" class="submit">
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

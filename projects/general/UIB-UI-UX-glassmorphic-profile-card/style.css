@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cardContainer {
+    background-image: url("./assets/christopher-gower-unsplash.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #EA6711;
+}
+
+.cardSubContainer p {
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 3em;
+    text-align: left;
+    color: #fff;
+}
+
+.cardSubContainer {
+    /*Front Layer*/
+    /* transform: translate(145%, 7%); */
+    text-align: center;
+    width: 476px;
+    /* height: 726px; */
+    border-top: 3px solid #cccfd5ec;
+    border-left: 3px solid #cccfd5fb;
+    /* background: rgb(2 25 39 / 25%); */
+    background-image: linear-gradient(#E1E4EA, #1a2e3d4b 40%);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.70); */
+    box-shadow: 0 0 42px #000000;
+    backdrop-filter: blur(16px) saturate(180%);
+    /* backdrop-filter: blur( 14px); */
+    /* -webkit-backdrop-filter: blur( 10px); */
+    border-radius: 15px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18); */
+}
+
+.profileImage {
+    display: inline-block;
+    margin-top: 40px;
+    width: 215px;
+    height: 215px;
+    background-image: url("./assets/profile-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #038AF8;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.Reference h2,
+.Reference ul {
+    padding: 40px;
+}
+
+ul {
+    font-size: 4rem;
+}
+
+.Reference img {
+    width: 100%;
+}
+
+i {
+    font-size: 6em;
+    color: #038AF8;
+    padding: 40px;
+}

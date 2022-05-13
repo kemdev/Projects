@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background: rgb(3, 157, 226);
+    background: radial-gradient(circle, rgba(3, 157, 226, 1) 0%, rgba(0, 80, 116, 1) 100%);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+
+/*
+=======================
+Info and its Box Style 
+=======================
+*/
+
+.infoBox {
+    width: 20%;
+    height: 20%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    margin-top: 100px;
+    width: 350px;
+    height: 250px;
+    background-color: #03A9F4;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    transition: all 0.61s ease-in-out;
+    clip-path: circle(6.3% at 9% 13%);
+    cursor: pointer;
+    animation: infoJumping 2s infinite backwards;
+}
+
+.infoBox:hover {
+    clip-path: circle(72.1% at 50% 48%);
+    animation: none;
+}
+
+.infoIcon {
+    position: absolute;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #FF1A96;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 45px;
+    font-weight: bolder;
+    left: 10px;
+    top: 10px;
+}
+
+.infoIcon:hover {
+    animation-play-state: paused;
+}
+
+.box {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
+
+.infoBox img {
+    margin-top: 10px;
+    width: 60%;
+}
+
+.infoIcon:hover+.box {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*TRYING TO MAKE THE CIRCLE EFFECT OVER THE BOX*/
+
+
+/*END OF MAKING THE CIRCLE EFFECT*/
+
+
+/*--------- End of style info section-------------*/
+
+
+/*
+=========================
+Freelancer Section
+=========================
+*/
+
+.freelancerSection {
+    font-size: 1.5rem;
+}
+
+.firstOne {
+    transform: translate(-50%);
+    /* animation: slideOutRight 4s infinite alternate cubic-bezier(0.55, 0.27, 0.97, 0.73); */
+    animation: nudge 8s infinite alternate linear;
+}
+
+.secondOne {
+    /* animation: maskBorder 1s infinite; */
+    transform: translate(-50%);
+    /* animation: slideOutRight 2s infinite alternate ease-in-out; */
+    animation: nudge 10s infinite alternate linear;
+}
+
+.firstOne,
+.secondOne {
+    margin-top: 100px;
+    position: relative;
+    height: 2.2em;
+    /* overflow: hidden; */
+}
+
+section h1::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 0.85em;
+    background: linear-gradient(0deg, #fff 0, transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+}
+
+
+/*---------- End of the Freelancer Section -------------*/
+
+
+/*
+=================
+    Animation
+=================
+*/
+
+@keyframes infoJumping {
+    0%,
+    20%,
+    53%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%,
+    43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(-50%);
+    }
+    100% {
+        visibility: hidden;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+@keyframes nudge {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(500px, 0);
+    }
+    75% {
+        transform: translate(50px, 0);
+    }
+}
+
+.polygon {
+    outline: 10px solid #fff;
+    width: 200px;
+    height: 200px;
+    background-color: #FF1A96;
+    animation: border 5s linear infinite;
+}
+
+.top-leftStart-backward:before {
+    border-top: 1px solid Tomato;
+    transition-timing-function: linear;
+}
+
+.top-leftStart-backward:after {
+    border-bottom: 1px solid DodgerBlue;
+    transition-timing-function: ease-in;
+}
+
+.top-leftStart-backward:before {
+    border-left: 1px solid smokeWhite;
+    transition-timing-function: ease-out;
+}
+
+.top-leftStart-backward:after {
+    border-right: 1px solid MediumSeaGreen;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes border {
+    to {
+        outline-offset: -800;
+    }
+}

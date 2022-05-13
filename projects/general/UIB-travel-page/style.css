@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+main {
+    height: calc(100vh - 100px);
+    /* width: 100vw; */
+    margin: 40px;
+}
+
+ul {
+    text-align: end;
+    padding-top: 30px;
+    padding-right: 80px;
+}
+
+li {
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 10px;
+    list-style: none;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+a:hover {
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+.leftSide {
+    width: 49.6%;
+    /* height: 500px; */
+    background-color: #fff;
+    float: left;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.paraSec {
+    font-size: 1.5em;
+    /* Here is paragraph Section style */
+    margin: 20% 20px 0;
+    line-height: 35px;
+}
+
+.imageContainer {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.rightImage {
+    /*Here goes the image*/
+    background-image: url("./images/beach.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: #eee;
+    height: 80px;
+    line-height: 80px;
+    padding-right: 20px;
+    margin: 50px;
+    width: 90%;
+    border-radius: 5px;
+    text-align: end;
+    font-weight: bolder;
+    font-size: 1.3em;
+}

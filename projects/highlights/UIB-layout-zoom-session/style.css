@@ -1,0 +1,196 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ :root {
+    font-size: 2rem;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #282B28;
+    display: grid;
+    height: 100vh;
+}
+
+header,
+footer {
+    background-color: #222222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    font-size: 21px;
+}
+
+header {
+    top: 0;
+    display: flex;
+}
+
+header h1 {
+    margin: auto;
+}
+
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 8% 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    /* padding: 40px; */
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 10px;
+    /* font-weight: bolder; */
+}
+
+.main div {
+    border-radius: 15px;
+    position: relative;
+}
+
+main div p {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    background-color: rgba(128, 128, 128, 0.74);
+    color: #fff;
+    padding: 6px;
+    font-size: 2em;
+}
+
+.main div::after {
+    content: '\f03d';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    color: green;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.img-1 {
+    background-image: url(assets/student-1.jpeg);
+}
+
+.img-2 {
+    background-image: url(assets/student-2.jpeg);
+}
+
+.img-3 {
+    background-image: url(assets/student-3.jpeg);
+}
+
+.img-4 {
+    background-image: url(assets/student-4.jpeg);
+}
+
+.img-5 {
+    background-image: url(assets/student-5.jpeg);
+}
+
+.img-6 {
+    background-image: url(assets/student-6.jpeg);
+}
+
+.img-7 {
+    background-image: url(assets/student-7.jpeg);
+}
+
+.img-8 {
+    background-image: url(assets/student-8.jpeg);
+}
+
+.img-9 {
+    background-image: url(assets/student-9.jpeg);
+}
+
+.img-10 {
+    background-image: url(assets/student-10.jpeg);
+}
+
+
+/* END OF main */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+i {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+footer div a {
+    /* display: block; */
+    padding: 0.22rem 1rem;
+    font-size: 1em;
+    color: #efefef;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        z-index: 1;
+    }
+    main {
+        margin: 20% 0;
+        padding-bottom: 100px;
+    }
+    .main {
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: repeat(5, auto);
+        z-index: -1;
+        height: 100vh;
+        width: 90%;
+        /* margin: 80px auto; */
+        /* row-gap: 40px; */
+        padding-bottom: 100px;
+    }
+    footer {
+        /* margin-top: 40px; */
+    }
+}
+
+@media screen and (max-width: 722px) {
+    main {
+        margin: 20% 0;
+        /* padding-bottom: 50%; */
+    }
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 250px);
+        z-index: -1;
+        height: 265vh;
+        width: 90%;
+        /* row-gap: 40px; */
+    }
+}

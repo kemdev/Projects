@@ -32,9 +32,9 @@ function randomNumber20End() {
     var result = '';
     for (var i = 1; i < row.length - 1; i++) {
         result = row[i] + '/' + col;
-        // console.log(row)
+        // //console.log(row)
     }
-    console.log(result)
+    // //console.log(result)
     return result;
 
 }
@@ -52,7 +52,7 @@ function tstCol() {
         }
     }
     testCondition + " / " + rand;
-    console.log(result);
+    // //console.log(result);
     return result;
 }
 
@@ -70,6 +70,6 @@ function tstRow() {
         }
     }
     testCondition + " / " + rand;
-    console.log(result);
+    // //console.log(result);
     return result;
 }

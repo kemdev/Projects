@@ -17,7 +17,7 @@ function printColor(ev) {
     const r = parseInt(color.substr(1, 2), 16);
     const g = parseInt(color.substr(3, 2), 16);
     const b = parseInt(color.substr(5, 2), 16);
-    console.log(`rgb: (${r},  ${g}, ${b})`);
+    // //console.log(`rgb: (${r},  ${g}, ${b})`);
     var theRGBcolor = `rgb: (${r},  ${g}, ${b})`;
     rgbShow.innerHTML = theRGBcolor;
     rgbShow.style.color = "green";

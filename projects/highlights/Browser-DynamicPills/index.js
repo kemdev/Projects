@@ -1,5 +1,5 @@
 function print(...arg) {
-    console.log(...arg)
+    //console.log(...arg)
 }
 
 // get all html elements that we need
@@ -23,11 +23,11 @@ let active = document.querySelector(".active");
 for (let i = 0; i < li.length; i++) {
 
     li[i].addEventListener('click', function() {
-        console.log("i is", li[i])
+        //console.log("i is", li[i])
 
         for (let j = 0; j < li.length; j++) {
             li[j].className = '';
-            console.log("j is", li[j])
+            //console.log("j is", li[j])
             section[j].className = ''
 
         }

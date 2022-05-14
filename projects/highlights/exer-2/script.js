@@ -48,7 +48,7 @@
 
 // function goRight() {
 //     let currentTransorm = container.style.transform;
-//     console.log(currentTransorm)
+//     //console.log(currentTransorm)
 //     for (let i = 1; i <= 2; i++) {
 //         container.style.transform = `translateX(${section.offsetWidth * speed}px)`
 //         break;

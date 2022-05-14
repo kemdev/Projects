@@ -38,7 +38,7 @@ function randomNumber20End() {
     //     }
     // }
     // testCondition + " / " + rand;
-    // console.log(result);
+    // //console.log(result);
     // return result;
 
     var row = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -46,9 +46,9 @@ function randomNumber20End() {
     var result = '';
     for (var i = 1; i < row.length - 1; i++) {
         result = row[i] + '/' + col;
-        console.log(row)
+        // //console.log(row)
     }
-    console.log(result)
+    //console.log(result)
     return result;
 
 }
@@ -59,7 +59,7 @@ function generateUniqueNumbers() {
         var r = Math.round(Math.random() * 19) + 1;
         if (arr.indexOf(r) === -1) arr.push(r);
     }
-    console.log(arr);
+    //console.log(arr);
 }
 
 function arrayTest() {
@@ -76,8 +76,8 @@ function arrayTest() {
             row.push(y)
         }
 
-        console.log("Col: ", col);
-        console.log("Row: ", row);
+        //console.log("Col: ", col);
+        //console.log("Row: ", row);
     }
 
 
